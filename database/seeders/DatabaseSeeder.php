@@ -2,9 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\category;
-use App\Models\tag;
-
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -25,5 +22,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call(UserSeeder::class);
+        $this->call(CuadraSeeder::class);
+        $this->call(ManzanaSeeder::class);
     }
 }
